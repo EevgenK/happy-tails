@@ -8,6 +8,7 @@
   background-color: var(--main-bg_color);
   padding: 8px 10px;
   border-radius: 20px;
+  border: 1px solid var(--text-color);
   text-align: center;
 }
 @media (min-width: 768px) {

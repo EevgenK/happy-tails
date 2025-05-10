@@ -18,15 +18,7 @@ const NavBar: FC<NavBarProps> = ({ modal, close }) => {
           Про Курс
         </a>
       </li>
-      <li className={s.card}>
-        <a
-          onClick={() => modal && close?.()}
-          href="#teachers"
-          aria-label="Link which moves to projects section"
-        >
-          Вчителі
-        </a>
-      </li>
+
       <li className={s.card}>
         <a
           onClick={() => modal && close?.()}
@@ -43,6 +35,15 @@ const NavBar: FC<NavBarProps> = ({ modal, close }) => {
           aria-label="Link which moves to about section"
         >
           Курси
+        </a>
+      </li>
+      <li className={s.card}>
+        <a
+          onClick={() => modal && close?.()}
+          href="#footer"
+          aria-label="Link which moves to projects section"
+        >
+          Контакти
         </a>
       </li>
     </ul>

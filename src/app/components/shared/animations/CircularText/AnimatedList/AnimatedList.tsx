@@ -1,8 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
 import { IconType } from 'react-icons';
-import s from './AnimatedList.module.css';
-
 import { Skill } from '@/app/data/skills';
 
 const listVariants = {

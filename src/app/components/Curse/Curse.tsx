@@ -10,10 +10,11 @@ export interface CurseProps {
 }
 
 const Curse = ({ item }: CurseProps) => {
-  const { id, title, days, price } = item;
+  const { id, title, days, price, salePrice } = item;
   const [selectedDay, setSelectedDay] = useState(1);
   const current = days.find((d) => d.day === selectedDay);
-  const formattedPrice = price.toLocaleString('uk-UA') + ' грн.';
+  const formattedPrice = price.toLocaleString('uk-UA');
+  const formattedSale = salePrice?.toLocaleString('uk-UA');
 
   return (
     <li className={clsx(s.card, s[`bg_${id}`])}>
@@ -37,12 +38,21 @@ const Curse = ({ item }: CurseProps) => {
         </ul>
         <article className={s.description}>
           <h4>Програма на день {selectedDay}: </h4>
-          <p>{current?.description}</p>
+          <p className={s.current}>{current?.description}</p>
           <p>
             Серед курсу обов'язково є вихідні, щоб ви могли відпочити після
             роботи з великою кількістю інформації.{' '}
           </p>
-          <p>Вартість курсу - {formattedPrice}</p>
+          <p>
+            Вартість курсу -{' '}
+            <mark className={clsx(s.price, salePrice && s.strike)}>
+              {formattedPrice}
+            </mark>{' '}
+            {!!salePrice && (
+              <mark className={clsx(s.price, s.sale)}>{formattedSale}</mark>
+            )}{' '}
+            грн.
+          </p>
         </article>
       </div>
     </li>

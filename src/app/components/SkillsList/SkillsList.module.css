@@ -22,6 +22,7 @@
   box-shadow: 6px 7px 5px 0px rgba(247, 234, 234, 0.56);
   border: 1px solid var(--text-color);
   border-radius: 20px;
+  background: var(--main-bg);
 }
 .icon {
   margin-right: 10px;

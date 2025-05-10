@@ -21,6 +21,8 @@
   border: 2px solid var(--main-bg_color);
   border-radius: 20px;
   padding: 10px;
+  box-shadow: 3px 5px 22px 16px rgba(242, 233, 233, 0.75);
+  background: var(--main-bg);
 }
 .photo {
   border-radius: 50%;

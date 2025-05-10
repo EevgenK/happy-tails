@@ -1,0 +1,16 @@
+.footer {
+  background: var(--main-bg);
+}
+.container {
+}
+.author {
+  display: flex;
+  gap: 10px;
+
+  justify-content: center;
+  transition: color var(--transition);
+  &:hover,
+  &:focus {
+    color: orange;
+  }
+}

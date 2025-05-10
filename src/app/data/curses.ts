@@ -8,6 +8,7 @@ export interface Course {
   title: string;
   days: CourseDay[];
   price: number;
+  salePrice?: number;
 }
 
 export const curses: Course[] = [
@@ -31,7 +32,8 @@ export const curses: Course[] = [
       },
       { day: 7, description: 'Екзаменаційна стрижка (самостійна робота)' },
     ],
-    price: 16000,
+    price: 18000,
+    salePrice: 16000,
   },
   {
     id: 'c2',
@@ -71,5 +73,6 @@ export const curses: Course[] = [
       },
     ],
     price: 20000,
+    salePrice: 0,
   },
 ];

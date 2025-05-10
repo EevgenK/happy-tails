@@ -1,7 +1,7 @@
 import s from './page.module.css';
 import Greeting from './components/Greeting/Greeting';
 import BenefitsList from './components/BenefitsList/BenefitsList';
-import { benefits } from './data/benefits';
+
 import Details from './components/Details/Details';
 import { curses } from './data/curses';
 import CursesList from './components/CursesList/CursesList';
@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Greeting />
       <Details />
-      <BenefitsList items={benefits} />
+      <BenefitsList />
       <CursesList items={curses} />
       <Summary />
     </>

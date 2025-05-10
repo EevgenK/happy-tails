@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Source_Code_Pro } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 const sourceCodePro = Source_Code_Pro({
   subsets: ['latin'],
@@ -55,7 +56,7 @@ export default function RootLayout({
       <body className={`${sourceCodePro.variable}`}>
         <Header />
         <main> {children}</main>
-        <footer></footer>
+        <Footer />
       </body>
     </html>
   );

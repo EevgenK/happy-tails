@@ -1,8 +1,9 @@
 'use client';
-import s from './SkillsList.module.css';
+
 import { skills } from '@/app/data/skills';
 import AnimatedList from '../shared/animations/CircularText/AnimatedList/AnimatedList';
 import { SiStudyverse } from 'react-icons/si';
+import s from './SkillsList.module.css';
 const SkillsList = () => {
   return (
     <AnimatedList
