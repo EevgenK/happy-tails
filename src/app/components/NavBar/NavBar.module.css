@@ -1,0 +1,26 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+.card {
+  text-transform: uppercase;
+  background-color: var(--main-bg_color);
+  padding: 8px 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .card {
+    padding: 10px 12px;
+  }
+}
+@media (min-width: 1400px) {
+  .list {
+  }
+}

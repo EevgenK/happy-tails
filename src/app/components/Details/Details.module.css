@@ -1,0 +1,10 @@
+.second_title {
+  margin-bottom: 10px;
+
+  color: var(--main-bg_color);
+}
+.details {
+  background-color: var(--text-color);
+  box-shadow: 8px -7px 86px -2px rgba(7, 56, 7, 0.75) inset;
+  border-radius: 20px;
+}

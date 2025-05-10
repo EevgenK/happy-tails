@@ -1,0 +1,82 @@
+.card {
+  padding: 6px 20px;
+
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 3px 5px 22px 16px rgba(242, 233, 233, 0.75);
+  & h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.bg_c1 {
+  background-image: var(--transplanted-bg), url(/curse_first-mob.webp);
+}
+.bg_c2 {
+  background-image: var(--transplanted-bg), url(/curse_second-mob.webp);
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.days {
+  box-shadow: rgb(2, 80, 2) 0px 0px 10px 0px;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all var(--transition);
+  width: 60px;
+  height: 28px;
+}
+
+.days:has(.active) {
+  scale: 1.1;
+  box-shadow: var(--text-color) 0px 0px 10px 0px;
+}
+.button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: var(--text-color);
+  color: var(--accent-color);
+  transition: color var(--transition) background-color var(--transition);
+}
+.active {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .days {
+    width: 80px;
+    height: 48px;
+  }
+}
+@media (min-width: 1280px) {
+  .card {
+    width: 600px;
+  }
+  .buttons {
+    min-height: 120px;
+  }
+  .description {
+    height: 430px;
+  }
+}

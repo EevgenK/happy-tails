@@ -1,0 +1,36 @@
+.title {
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 200px;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.bg {
+  background-image: url(/hero-mob.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 36px;
+    margin-bottom: 400px;
+  }
+  .bg {
+    background-image: url(/hero-tablet.webp);
+  }
+}
+@media (min-width: 1280px) {
+  .title {
+    font-size: 46px;
+    margin-bottom: 740px;
+    color: var(--accent-color);
+  }
+  .bg {
+    background-image: url(/hero-desktop.webp);
+    background-position: top;
+  }
+}

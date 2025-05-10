@@ -1,0 +1,16 @@
+:root {
+  --main-bg_color: rgb(17, 16, 16);
+  --accent-color: rgb(7, 56, 7);
+  --text-color: #ffff;
+  --transition: 250ms linear;
+  --main-bg: linear-gradient(
+    to bottom,
+    var(--accent-color),
+    var(--main-bg_color)
+  );
+  --transplanted-bg: linear-gradient(
+    to bottom,
+    rgba(47, 47, 47, 0.7),
+    rgba(10, 77, 38, 0.7)
+  );
+}

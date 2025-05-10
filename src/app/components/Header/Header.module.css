@@ -1,0 +1,17 @@
+.header {
+  background: var(--main-bg);
+  position: sticky;
+  top: 0;
+  left: auto;
+  z-index: 1000;
+  transition: background var(--transition);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.fixed {
+  background: var(--transplanted-bg);
+}

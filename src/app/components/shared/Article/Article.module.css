@@ -1,0 +1,14 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: linear-gradient(to left, #b7dacecc, var(--accent-color));
+  padding: 10px 20px;
+  border: 2px solid var(--main-bg_color);
+  border-radius: 20px;
+  margin-bottom: 10px;
+
+  & p {
+    text-align: justify;
+  }
+}

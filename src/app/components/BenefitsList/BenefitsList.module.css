@@ -1,0 +1,45 @@
+.bg {
+  background-image: url(/benefits-mob.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.title {
+  margin-bottom: 10px;
+  color: var(--accent-color);
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.benefit {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  line-height: 1;
+  border: 10px outset rgb(2, 66, 2);
+  border-radius: 20px;
+  background: var(--transplanted-bg);
+  padding: 2px 4px;
+}
+.icon {
+  min-width: 50px;
+  min-height: 50px;
+}
+@media (min-width: 1400px) {
+  .title {
+    margin-bottom: 50px;
+    color: var(--accent-color);
+  }
+  .bg {
+    background-image: url(/benefits-tablet.webp);
+  }
+}
+@media (min-width: 1280px) {
+  .bg {
+    background-image: url(/benefits-desktop.webp);
+  }
+}
+/*
+linear-gradient(to bottom, #d5eee5cc, var(--accent-color)),*/
