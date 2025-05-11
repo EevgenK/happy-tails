@@ -22,7 +22,16 @@ const Curse = ({ item }: CurseProps) => {
       <div className={s.wrap}>
         <ul className={s.buttons}>
           {days.map(({ day }, idx) => (
-            <li className={s.days} key={day + idx}>
+            <li
+              className={s.days}
+              key={day + idx}
+              style={{
+                animationDelay: `${idx * 0.8}s`,
+                animationDuration: '3s',
+                animationIterationCount: 'infinite',
+                animationFillMode: 'forwards',
+              }}
+            >
               <button
                 aria-label={`Вибір дня для курсу ${title}`}
                 className={clsx(s.button, day === selectedDay && s.active)}

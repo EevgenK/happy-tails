@@ -1,7 +1,8 @@
 :root {
   --main-bg_color: rgb(17, 16, 16);
   --accent-color: rgb(7, 56, 7);
-  --text-color: #ffff;
+  --text-color: #f7f0f0;
+  --hover-color: rgb(44, 224, 98);
   --transition: 250ms linear;
   --main-bg: linear-gradient(
     to bottom,

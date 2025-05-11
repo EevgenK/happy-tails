@@ -1,10 +1,14 @@
 import Image from 'next/image';
 import s from './Logo.module.css';
 import CircularText from '../shared/animations/CircularText/CircularText';
+import clsx from 'clsx';
 
-const Logo = () => {
+type LogoProps = {
+  additionalClass?: string;
+};
+const Logo = ({ additionalClass }: LogoProps) => {
   return (
-    <a className={s.link} href="/" aria-label="logo">
+    <a className={clsx(s.link, additionalClass)} href="#" aria-label="logo">
       {/* <span className={s.text}>Happy Tails</span>
       <Image
         className={s.logo}

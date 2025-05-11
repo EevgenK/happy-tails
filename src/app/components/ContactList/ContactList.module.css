@@ -2,7 +2,7 @@
   display: flex;
   gap: 10px;
   margin-bottom: 6px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .contacts {
   display: flex;
@@ -13,6 +13,18 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  transition: color var(--transition);
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
+}
+.link > svg {
+  transition: transform var(--transition);
+}
+.link:hover > svg,
+.link:focus > svg {
+  transform: scale(1.2);
 }
 .socials {
   display: flex;
@@ -22,10 +34,9 @@
 }
 .social_link {
   padding: 5px 16px;
-
   border-radius: 40px;
-  transition: transform var(--transition);
   background-color: black;
+  transition: transform var(--transition);
   &:hover,
   &:focus {
     transform: scale(1.1);
@@ -37,8 +48,8 @@
     gap: 6px;
   }
   .social_link {
-    padding: 5px 16px;
-    font-size: 26px;
+    padding: 10px 30px;
+    font-size: 30px;
   }
 }
 @media (min-width: 1280px) {

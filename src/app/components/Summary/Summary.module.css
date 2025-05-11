@@ -43,10 +43,14 @@
   }
 }
 @media (min-width: 1280px) {
+  .practice {
+    font-size: 24px;
+  }
   .wrap {
     padding: 20px;
     & p {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+      font-size: 24px;
     }
   }
 }

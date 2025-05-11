@@ -1,50 +1,49 @@
 'use client';
 import { FC } from 'react';
 import s from './NavBar.module.css';
+import ShinyText from '../shared/animations/SnipyText/SnipyText';
 
-interface NavBarProps {
-  modal?: boolean | string;
-  close?: () => void;
-}
-const NavBar: FC<NavBarProps> = ({ modal, close }) => {
+const NavBar = () => {
   return (
-    <ul className={modal ? s.modal_menu : s.list}>
+    <ul className={s.list}>
       <li className={s.card}>
-        <a
-          onClick={() => modal && close?.()}
+        <ShinyText
+          as="a"
           href="#about_curse"
-          aria-label="Link which moves to skills section"
+          aria-label="Link which moves to curse description section"
         >
           Про Курс
-        </a>
+        </ShinyText>
       </li>
 
       <li className={s.card}>
-        <a
-          onClick={() => modal && close?.()}
+        <ShinyText
+          additionalClass={s.test}
+          as="a"
+          speed={3}
           href="#benefits"
           aria-label="Link which moves to about section"
         >
           Переваги
-        </a>
+        </ShinyText>
       </li>
       <li className={s.card}>
-        <a
-          onClick={() => modal && close?.()}
+        <ShinyText
+          as="a"
           href="#curses"
           aria-label="Link which moves to about section"
         >
           Курси
-        </a>
+        </ShinyText>
       </li>
       <li className={s.card}>
-        <a
-          onClick={() => modal && close?.()}
+        <ShinyText
+          as="a"
           href="#footer"
           aria-label="Link which moves to projects section"
         >
           Контакти
-        </a>
+        </ShinyText>
       </li>
     </ul>
   );

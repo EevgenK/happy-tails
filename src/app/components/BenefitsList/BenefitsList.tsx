@@ -6,7 +6,7 @@ import { CiSun } from 'react-icons/ci';
 import Container from '../shared/Container/Container';
 import { benefits } from '@/app/data/benefits';
 
-import AnimatedList from '../shared/animations/CircularText/AnimatedList/AnimatedList';
+import AnimatedList from '../shared/animations/AnimatedList/AnimatedList';
 
 const BenefitsList = () => {
   return (

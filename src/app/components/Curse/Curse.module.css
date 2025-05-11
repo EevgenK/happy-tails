@@ -1,6 +1,5 @@
 .card {
   padding: 6px 20px;
-
   border-radius: 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -35,11 +34,29 @@
   transition: all var(--transition);
   width: 60px;
   height: 28px;
+  animation: pulse-glow 5s infinite ease-in-out;
+  transition: transform var(--transition);
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 10px 0 rgba(2, 80, 2, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 8px 5px rgba(2, 255, 2, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px 0 rgba(2, 80, 2, 0.7);
+  }
 }
 
 .days:has(.active) {
-  scale: 1.1;
+  transform: scale(1.1);
   box-shadow: var(--text-color) 0px 0px 10px 0px;
+  animation: none;
 }
 .button {
   display: flex;
@@ -56,6 +73,7 @@
 .active {
   background-color: var(--accent-color);
   color: var(--text-color);
+  pointer-events: none;
 }
 .description {
   display: flex;
@@ -81,7 +99,7 @@
   color: black;
 }
 .sale {
-  background: rgb(44, 224, 98);
+  background: var(--hover-color);
   font-weight: 600;
   font-size: 20px;
 }
@@ -99,6 +117,6 @@
     min-height: 120px;
   }
   .description {
-    height: 430px;
+    height: 470px;
   }
 }

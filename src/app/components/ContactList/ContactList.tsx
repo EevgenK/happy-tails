@@ -26,6 +26,7 @@ const ContactList = () => {
   return (
     <div className={s.wrap}>
       <ul className={s.contacts}>{renderContact(items)}</ul>
+
       <ul className={s.socials}>{renderContact(socials)}</ul>
     </div>
   );

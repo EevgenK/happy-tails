@@ -1,3 +1,4 @@
+import ShinyText from '../shared/animations/SnipyText/SnipyText';
 import Article from '../shared/Article/Article';
 import Container from '../shared/Container/Container';
 import Section from '../shared/Section/Section';
@@ -7,9 +8,10 @@ const Greeting = () => {
   return (
     <Section id="greeting">
       <Container additionalClass={s.bg}>
-        <h1 className={s.title}>
+        <ShinyText as="h1" additionalClass={s.title} speed={6}>
           Твій шлях до нової професії — почни вже сьогодні!
-        </h1>
+        </ShinyText>
+
         <Article>
           <p className={s.text}>
             Запрошуємо на практичний курс «Салонний грумінг з нуля» у Дніпрі.

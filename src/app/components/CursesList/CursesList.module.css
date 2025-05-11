@@ -13,8 +13,9 @@
   text-transform: uppercase;
   text-align: center;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1280px) {
   .list {
+    justify-content: space-between;
     flex-direction: row;
   }
 }

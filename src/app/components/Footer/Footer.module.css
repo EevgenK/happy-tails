@@ -1,8 +1,10 @@
 .footer {
   background: var(--main-bg);
 }
-.container {
+.logo {
+  display: none;
 }
+
 .author {
   display: flex;
   gap: 10px;
@@ -12,5 +14,22 @@
   &:hover,
   &:focus {
     color: orange;
+  }
+}
+@media (min-width: 768px) {
+  .logo {
+    display: block;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+  }
+  .author {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
   }
 }

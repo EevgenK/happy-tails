@@ -4,6 +4,7 @@
   background-position: center;
   background-size: cover;
   border-radius: 20px;
+  overflow: hidden;
 }
 .title {
   margin-bottom: 10px;

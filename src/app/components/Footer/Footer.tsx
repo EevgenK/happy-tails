@@ -7,6 +7,7 @@ const Footer = () => {
   return (
     <footer id="footer" className={s.footer}>
       <Container additionalClass={s.container}>
+        <Logo additionalClass={s.logo} />
         <ContactList />
 
         <a

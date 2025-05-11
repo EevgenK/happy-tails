@@ -1,14 +1,21 @@
 import type { Metadata } from 'next';
-import { Source_Code_Pro } from 'next/font/google';
+import { Source_Code_Pro, Lobster } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+
+import SnippetButtonWrapper from './components/SnippetButtonWrapper/SnippetButtonWrapper';
 
 const sourceCodePro = Source_Code_Pro({
   subsets: ['latin'],
   style: ['normal', 'italic'],
   variable: '--font-source-code',
   display: 'swap',
+});
+const sourceLobster = Lobster({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-lobster',
 });
 
 export const metadata: Metadata = {
@@ -53,10 +60,11 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
 
-      <body className={`${sourceCodePro.variable}`}>
+      <body className={`${sourceCodePro.variable} ${sourceLobster.variable}`}>
         <Header />
         <main> {children}</main>
         <Footer />
+        <SnippetButtonWrapper />
       </body>
     </html>
   );
