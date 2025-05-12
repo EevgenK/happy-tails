@@ -1,7 +1,7 @@
 'use client';
-import { FC } from 'react';
-import s from './NavBar.module.css';
+
 import ShinyText from '../shared/animations/SnipyText/SnipyText';
+import s from './NavBar.module.css';
 
 const NavBar = () => {
   return (
@@ -22,7 +22,7 @@ const NavBar = () => {
           as="a"
           speed={3}
           href="#benefits"
-          aria-label="Link which moves to about section"
+          aria-label="Link which moves to benefits section"
         >
           Переваги
         </ShinyText>
@@ -31,7 +31,7 @@ const NavBar = () => {
         <ShinyText
           as="a"
           href="#curses"
-          aria-label="Link which moves to about section"
+          aria-label="Link which moves to curses section"
         >
           Курси
         </ShinyText>
@@ -40,7 +40,7 @@ const NavBar = () => {
         <ShinyText
           as="a"
           href="#footer"
-          aria-label="Link which moves to projects section"
+          aria-label="Link which moves to contacts section"
         >
           Контакти
         </ShinyText>

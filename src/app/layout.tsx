@@ -24,18 +24,20 @@ export const metadata: Metadata = {
     'Професійні курси грумінгу у салоні Happy Tails Grooming. Навчіться стригти собак і кішок професійно. Найкращі викладачі, сучасна програма.',
   keywords: [
     'курси грумінгу',
+    'курси грумінгу Дніпро',
+    'курси грумінгу Днепр',
     'навчання грумінгу',
     'стрижка собак',
     'грумінг',
     'курсы груминга',
     'груминг обучение',
   ],
-  metadataBase: new URL('https://happytailsgrooming.com'),
+  metadataBase: new URL('https://happy-tails-sage.vercel.app/'),
   openGraph: {
     title: 'Курси грумінгу — Happy Tails Grooming',
     description:
       'Приєднуйтесь до курсів грумінгу у Дніпрі! Професійна підготовка для майбутніх грумерів.',
-    url: 'https://happytailsgrooming.com',
+    url: 'https://happy-tails-sage.vercel.app/',
     type: 'website',
     locale: 'uk_UA',
     images: ['/og-image.jpg'],
@@ -47,6 +49,7 @@ export const metadata: Metadata = {
   icons: {
     icon: '/logo.png',
   },
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({
@@ -58,10 +61,14 @@ export default function RootLayout({
     <html lang="uk">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <link rel="apple-touch-icon" href="/logo.png" />
       </head>
 
       <body className={`${sourceCodePro.variable} ${sourceLobster.variable}`}>
         <Header />
+
         <main> {children}</main>
         <Footer />
         <SnippetButtonWrapper />

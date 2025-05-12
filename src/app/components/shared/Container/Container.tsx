@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
-import s from './Container.module.css';
 import clsx from 'clsx';
+import s from './Container.module.css';
 
 export interface ContainerProps {
   children: ReactNode;

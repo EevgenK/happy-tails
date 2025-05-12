@@ -1,7 +1,7 @@
-import s from './Details.module.css';
 import Section from '../shared/Section/Section';
 import Container from '../shared/Container/Container';
 import Article from '../shared/Article/Article';
+import s from './Details.module.css';
 
 const Details = () => {
   return (

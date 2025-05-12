@@ -1,6 +1,6 @@
 import { contacts, Contact } from '@/app/data/contacts';
-import s from './ContactList.module.css';
 import clsx from 'clsx';
+import s from './ContactList.module.css';
 
 const ContactList = () => {
   const items = contacts.filter(({ item }) => item);

@@ -1,0 +1,39 @@
+.notfound {
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  line-height: 1.33;
+  font-size: 24px;
+}
+.notfound > h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.wrap {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.wrap > h3 {
+  text-transform: uppercase;
+}
+.link {
+  background-color: var(--main-bg_color);
+  padding: 8px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--text-color);
+  text-align: center;
+  transition: transform var(--transition);
+}
+.link:hover,
+.link:focus {
+  transform: scale(1.1);
+}

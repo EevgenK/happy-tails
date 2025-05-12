@@ -72,7 +72,7 @@ export const curses: Course[] = [
         description: 'Екзаменаційна стрижка (самостійна робота)',
       },
     ],
-    price: 20000,
-    salePrice: 0,
+    price: 22000,
+    salePrice: 20000,
   },
 ];

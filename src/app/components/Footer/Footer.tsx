@@ -14,7 +14,7 @@ const Footer = () => {
           className={s.author}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`Link which allows to contact with developer of wep-site`}
+          aria-label={`Link which allows to contact with developer of this wep-site`}
           href="https://portfolio-react-gamma-orcin.vercel.app/"
         >
           <p>&copy; 2025</p>

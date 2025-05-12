@@ -2,10 +2,9 @@
 import { useEffect, useState } from 'react';
 import Logo from '../Logo/Logo';
 import NavBar from '../NavBar/NavBar';
-
 import Container from '../shared/Container/Container';
-import s from './Header.module.css';
 import clsx from 'clsx';
+import s from './Header.module.css';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);

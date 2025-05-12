@@ -29,13 +29,13 @@
 .socials {
   display: flex;
   flex-direction: column;
-  color: #ffff;
+  color: var(--text-color);
   gap: 2px;
 }
 .social_link {
   padding: 5px 16px;
   border-radius: 40px;
-  background-color: black;
+  background-color: var(--main-bg_color);
   transition: transform var(--transition);
   &:hover,
   &:focus {
@@ -52,21 +52,3 @@
     font-size: 30px;
   }
 }
-@media (min-width: 1280px) {
-}
-/* .viber {
-  background-color: #7d3daf;
-}
-.telegram {
-  background-color: #368ef1;
-}
-.instagram {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-} */

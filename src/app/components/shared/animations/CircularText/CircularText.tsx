@@ -58,16 +58,15 @@ const CircularText = ({
         controls.stop();
         break;
       case 'goBonkers':
-        startRotation(1); // super fast
+        startRotation(1);
         break;
     }
   };
 
   const handleHoverEnd = () => {
-    startRotation(); // back to default
+    startRotation();
   };
 
-  // запускаємо початкову анімацію після монтування
   useEffect(() => {
     startRotation();
   }, []);

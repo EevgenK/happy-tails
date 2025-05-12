@@ -9,15 +9,6 @@ type LogoProps = {
 const Logo = ({ additionalClass }: LogoProps) => {
   return (
     <a className={clsx(s.link, additionalClass)} href="#" aria-label="logo">
-      {/* <span className={s.text}>Happy Tails</span>
-      <Image
-        className={s.logo}
-        src="/logo.png"
-        alt="logo"
-        width={40}
-        height={40}
-      ></Image>
-      <span className={s.text}>Grooming</span> */}
       <CircularText
         text="Happy Tails * Grooming * "
         spinDuration={30}

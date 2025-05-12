@@ -1,10 +1,10 @@
 'use client';
 import { MdConnectWithoutContact } from 'react-icons/md';
-import s from './SnippetButton.module.css';
 import { useMemo, useState } from 'react';
 import { contacts } from '@/app/data/contacts';
 import clsx from 'clsx';
 import { useRadialAnimation } from '@/app/utils/hooks/useRadialAnimation';
+import s from './SnippetButton.module.css';
 
 const SnippetButton = () => {
   const [show, setShow] = useState(false);

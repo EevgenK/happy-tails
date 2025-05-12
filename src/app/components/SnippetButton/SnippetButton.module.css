@@ -20,7 +20,6 @@
 }
 .icon {
   cursor: pointer;
-
   fill: var(--text-color);
   transition: fill var(--transition);
 }

@@ -89,14 +89,14 @@
   font-style: italic;
   font-weight: 400;
   background-color: var(--main-bg_color);
-  padding: 2px 8px;
+  padding: 2px 6px;
   color: var(--text-color);
 }
 .strike {
   text-decoration: line-through;
   opacity: 0.8;
-  background-color: grey;
-  color: black;
+  background-color: var(--nonactive-color);
+  color: var(--main-bg_color);
 }
 .sale {
   background: var(--hover-color);
@@ -107,6 +107,9 @@
   .days {
     width: 80px;
     height: 48px;
+  }
+  .price {
+    padding: 4px 8px;
   }
 }
 @media (min-width: 1280px) {

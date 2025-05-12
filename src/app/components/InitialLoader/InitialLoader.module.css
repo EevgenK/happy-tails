@@ -1,0 +1,19 @@
+.overlay {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: var(--main-bg_color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  animation: fadeOut 0.3s ease forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
