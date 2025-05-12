@@ -1,6 +1,6 @@
 {
-  "name": "My App",
-  "short_name": "App",
+  "name": "Happy Tails Grooming — Курси грумінгу",
+  "short_name": "Happy Tails Grooming",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

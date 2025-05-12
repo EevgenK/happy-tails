@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Happy Tails Grooming — Курси Грумінгу
 
-## Getting Started
+Цей проект є лендінг пейджем для салону "Happy Tails Grooming", що спеціалізується на професійних курсах грумінгу для собак та кішок. Сайт розроблений з використанням **Next.js & Type Script** та підтримує респонсивний дизайн для зручності перегляду на різних пристроях.
 
-First, run the development server:
+## Опис
+
+Метою сайту є надання інформації про курси грумінгу, зокрема:
+
+- Опис курсу.
+- Переваги навчання в салоні.
+- Поденний опис курсу.
+- Можливість зв'язку через телефон та соціальні мережі.
+
+## Залежності
+
+Цей проект використовує наступні залежності:
+
+### Основні залежності:
+
+- **Next.js**: Для створення серверного рендерингу та побудови лендінгу.
+- **React**: Для розробки інтерфейсу користувача.
+- **React-DOM**: Для інтеграції React компонентів в DOM.
+- **Framer Motion**: Для анімацій та інтерактивних елементів.
+- **clsx**: Для умовного застосування класів CSS.
+- **React Icons**: Для використання іконок у інтерфейсі.
+- **Modern Normalize**: Для стандартизації стилів браузера.
+
+### Скрипти:
+
+- `dev`: Запускає сервер для розробки з підтримкою **Turbopack**:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `build`: Створює продакшн-будову:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `start`: Запускає сервер для продакшн-будови:
 
-## Learn More
+```bash
+  npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Структура проекту:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- pages/ — містить сторінки Next.js (наприклад, index.js для головної сторінки).
+- components/ — компоненти, що використовуються на сторінках.
+- styles/ — CSS для кастомізації стилів.
+- data/ - дані для рендеру
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Як запустити проект локально:
 
-## Deploy on Vercel
+1. Клонуйте репозиторій:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+    git clone <url-репозиторія>
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Перейдіть до директорії проекту:
+   ```bash
+   cd happy-tails-grooming
+   ```
+3. Встановіть залежності:
+   ```bash
+   npm install
+   ```
+4. Запустіть сервер для розробки:
+   ```bash
+   npm run dev
+   ```
+5. Тепер ви можете відкривати сайт у браузері за адресою http://localhost:3000.
