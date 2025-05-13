@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     'курсы груминга',
     'груминг обучение',
   ],
-  metadataBase: new URL('https://happy-tails-sage.vercel.app/'),
+  metadataBase: new URL('https://www.happytails-grooming.dp.ua/'),
   openGraph: {
     title: 'Курси грумінгу — Happy Tails Grooming',
     description:
       'Приєднуйтесь до курсів грумінгу у Дніпрі! Професійна підготовка для майбутніх грумерів.',
-    url: 'https://happy-tails-sage.vercel.app/',
+    url: 'https://www.happytails-grooming.dp.ua/',
     type: 'website',
     locale: 'uk_UA',
     images: ['/og-image.jpg'],

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: / 
+Sitemap: https://www.happytails-grooming.dp.ua/sitemap.xml
